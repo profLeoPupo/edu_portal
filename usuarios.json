@@ -1,0 +1,16 @@
+{
+  "usuarios": [
+    {
+      "email": "aluno@sactecnico.com.br",
+      "senha": "123456"
+    },
+    {
+      "email": "professor@leo.dev",
+      "senha": "prof123"
+    },
+    {
+      "email": "lucia@maedeti.com",
+      "senha": "maedeti"
+    }
+  ]
+}
