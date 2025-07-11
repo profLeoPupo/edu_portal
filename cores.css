@@ -1,0 +1,32 @@
+:root {
+  /* Tema Padrão: Azul + Laranja */
+  --cor-primaria: #11014d;
+  --cor-secundaria: #1a1a2e;
+  --cor-destaque: #ff6f00;
+  --cor-hover: #ff8c00;
+
+  --texto-claro: #f8f9fa;
+  --fundo-claro: #f3f4f6;
+  --cinza-medio: #4b5563;
+  --branco: #ffffff;
+  --neon: #00f3ffcc;
+  --sombra: 0 8px 24px rgba(0, 0, 0, 0.15);
+  --borda: 1px solid rgba(255, 255, 255, 0.1);
+  --transicao: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* === Paleta Alternativa 1: Roxo + Verde Neon === */
+[data-theme="neon"] {
+  --cor-primaria: #2a003f;
+  --cor-secundaria: #0f0f2e;
+  --cor-destaque: #00ff95;
+  --cor-hover: #00cc77;
+}
+
+/* === Paleta Alternativa 2: Azul Claro + Laranja === */
+[data-theme="sunlight"] {
+  --cor-primaria: #004e89;
+  --cor-secundaria: #2e86ab;
+  --cor-destaque: #ffba08;
+  --cor-hover: #faa307;
+}
