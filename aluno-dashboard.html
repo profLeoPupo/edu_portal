@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>SAC Técnico | Área do Aluno</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header Global -->
+  <header id="site-header">
+    <nav class="navbar container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logoheader.png" alt="SAC Técnico" class="logo">
+      </a>
+      
+      <button class="mobile-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portal.html">Portal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="acervo.html">Acervo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline" href="#" id="logout-btn">Sair</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+ <!-- Conteúdo Principal - Área do Aluno -->
+  <main style="padding: 6rem 1rem 4rem;">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+        <h2>Área do Aluno</h2>
+        <div style="display: flex; align-items: center; gap: 15px;">
+          <div style="text-align: right;">
+            <p id="aluno-dashboard-nome" style="font-weight: 600; margin-bottom: 0;">Carregando...</p>
+            <small style="opacity: 0.8;">Plano VIP</small>
+          </div>
+          <div style="width: 50px; height: 50px; border-radius: 50%; background: linear-gradient(45deg, var(--azul-escuro), var(--laranja-hover)); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;" id="aluno-iniciais">
+            ?
+          </div>
+        </div>
+      </div>
+
+      <h2>Bem-vindo(a), <span id="aluno-nome"></span></h2>
+
+
+
+      <div class="portal-grid">
+        <div class="card portal-item">
+          <div class="portal-img" style="background: linear-gradient(45deg, #1a1a2e, #00f3ffcc);">
+            <i class="fas fa-video"></i>
+          </div>
+          <div class="portal-content">
+            <h4>Aulas Gravadas</h4>
+            <p>Acesse as gravações das aulas passadas.</p>
+            <a href="aulas.html" class="btn btn-outline" style="margin-top: 1rem;">Acessar</a>
+          </div>
+        </div>
+        
+        <div class="card portal-item">
+          <div class="portal-img" style="background: linear-gradient(45deg, #1a1a2e, #ff6f00);">
+            <i class="fas fa-book"></i>
+          </div>
+          <div class="portal-content">
+            <h4>Materiais Didáticos</h4>
+            <p>Download de apostilas, slides e exercícios.</p>
+            <a href="materiais.html" class="btn btn-outline" style="margin-top: 1rem;">Acessar</a>
+          </div>
+        </div>
+        
+        <div class="card portal-item">
+          <div class="portal-img" style="background: linear-gradient(45deg, #1a1a2e, #00ff95);">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <div class="portal-content">
+            <h4>Calendário de Aulas</h4>
+            <p>Próximas aulas ao vivo e eventos.</p>
+            <a href="calendario.html" class="btn btn-outline" style="margin-top: 1rem;">Acessar</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 3rem;">
+        <h3 style="margin-bottom: 1.5rem;">Minhas Turmas</h3>
+        <div class="servicos-grid">
+          <div class="card">
+            <h4 style="color: var(--laranja-principal);">Algoritmos Quantitativos</h4>
+            <p><i class="fas fa-user-graduate" style="margin-right: 8px;"></i> Professor: Leonardo Pupo</p>
+            <p><i class="fas fa-calendar" style="margin-right: 8px;"></i> Segundas, 19h às 21h</p>
+            <p><i class="fas fa-chart-line" style="margin-right: 8px;"></i> Progresso: 65%</p>
+            <div style="height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; margin: 15px 0;">
+              <div style="height: 100%; width: 65%; background: var(--laranja-principal); border-radius: 4px;"></div>
+            </div>
+            <a href="curso-algoritmos.html" class="btn" style="margin-top: 1rem;">Continuar Estudos</a>
+          </div>
+          
+          <div class="card">
+            <h4 style="color: var(--laranja-principal);">Computação Embarcada</h4>
+            <p><i class="fas fa-user-graduate" style="margin-right: 8px;"></i> Professor: Leonardo Pupo</p>
+            <p><i class="fas fa-calendar" style="margin-right: 8px;"></i> Quartas, 19h às 21h</p>
+            <p><i class="fas fa-chart-line" style="margin-right: 8px;"></i> Progresso: 30%</p>
+            <div style="height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; margin: 15px 0;">
+              <div style="height: 100%; width: 30%; background: var(--laranja-principal); border-radius: 4px;"></div>
+            </div>
+            <a href="curso-embarcada.html" class="btn" style="margin-top: 1rem;">Continuar Estudos</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 3rem;">
+        <h3 style="margin-bottom: 1.5rem;">Próximas Aulas</h3>
+        <div class="card" style="margin-bottom: 1.5rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <h4 style="color: var(--laranja-principal); margin-bottom: 0.5rem;">Algoritmos Quantitativos</h4>
+              <p><i class="fas fa-calendar" style="margin-right: 8px;"></i> Segunda, 15 Jul 2024 - 19:00 às 21:00</p>
+            </div>
+            <a href="#" class="btn">Acessar Sala</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <h4 style="color: var(--laranja-principal); margin-bottom: 0.5rem;">Computação Embarcada</h4>
+              <p><i class="fas fa-calendar" style="margin-right: 8px;"></i> Quarta, 17 Jul 2024 - 19:00 às 21:00</p>
+            </div>
+            <a href="#" class="btn">Acessar Sala</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Global -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="img/logoheader.png">
+          <h4></h4>
+          <h3>Transformando conhecimento em soluções tecnológicas inovadoras desde 2010.</h3>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Links Rápidos</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Início</a></li>
+            <li><a href="portal.html"><i class="fas fa-chevron-right"></i> Portal</a></li>
+            <li><a href="acervo.html"><i class="fas fa-chevron-right"></i> Acervo</a></li>
+            <li><a href="contato.html"><i class="fas fa-chevron-right"></i> Contato</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Categorias</h4>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Hardware</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Programação</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Segurança</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Inteligência Artificial</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Criptomoedas</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul class="footer-links">
+           <li><a href="https://wa.me/message/PX6Y3A4X5KBDE1"><i class="fas fa-phone"></i> (11) 93251-9655</a></li>
+            <li><a href="mailto:contato@sactecnico.com.br"><i class="fas fa-envelope"></i> atendesac@sactecnico.com.br</a></li>
+            <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/message/PX6Y3A4X5KBDE1"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; 2025 SAC Técnico • Criado por alunos e o Prof. Leo Pupo 💻</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Botão Voltar ao Topo -->
+  <div class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+  
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyCgbMW_jSU4DWOwIWXP4s0OR09h80sOcCU",
+      authDomain: "login-aluno.firebaseapp.com",
+      projectId: "login-aluno",
+      storageBucket: "login-aluno.firebasestorage.app",
+      messagingSenderId: "247758317971",
+      appId: "1:247758317971:web:7601125b6ab288ef17e066",
+      measurementId: "G-WW3WQGDJ3J"
+    };
+    firebase.initializeApp(firebaseConfig);
+
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('logout-btn').addEventListener('click', function (e) {
+        e.preventDefault();
+        firebase.auth().signOut().then(() => {
+          localStorage.clear();
+          window.location.href = "index.html";
+        });
+      });
+
+      const nome = localStorage.getItem("aluno_nome") || "Aluno(a)";
+      document.getElementById("aluno-nome").textContent = nome;
+      document.getElementById("aluno-dashboard-nome").textContent = nome;
+
+      const iniciais = nome.split(" ").map(n => n[0]).join("").slice(0, 2).toUpperCase();
+      document.getElementById("aluno-iniciais").textContent = iniciais || "A";
+    });
+  </script>
+
+
+</body>
+</html>
