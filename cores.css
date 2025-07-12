@@ -1,32 +1,128 @@
+/* VARIÁVEIS GLOBAIS */
 :root {
-  /* Tema Padrão: Azul + Laranja */
-  --cor-primaria: #11014d;
-  --cor-secundaria: #1a1a2e;
-  --cor-destaque: #ff6f00;
-  --cor-hover: #ff8c00;
+  --cor-principal: #11014d;              /* cor dominante do fundo */
+  --cor-secundaria: #1a1a2e;             /* cor complementar escura */
+  --cor-destaque: #ff6f00;               /* cor dos botões, links principais */
+  --cor-destaque-hover: #ff8c00;         /* hover de destaque */
 
-  --texto-claro: #f8f9fa;
-  --fundo-claro: #f3f4f6;
-  --cinza-medio: #4b5563;
-  --branco: #ffffff;
-  --neon: #00f3ffcc;
-  --sombra: 0 8px 24px rgba(0, 0, 0, 0.15);
-  --borda: 1px solid rgba(255, 255, 255, 0.1);
-  --transicao: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --cor-texto: #f8f9fa;                  /* texto principal claro */
+  --cor-fundo: #f3f4f6;                  /* fundo claro alternativo */
+  --cor-base: #4b5563;                   /* cinza médio para textos secundários */
+  --cor-branca: #ffffff;                 /* branco puro */
+  --cor-acento: #00f3ffcc;               /* cor chamativa, neon, usada pontualmente */
+
+  --sombra-padrao: 0 8px 24px rgba(0, 0, 0, 0.15);
+  --borda-padrao: 1px solid rgba(255, 255, 255, 0.1);
+  --cor-transicao: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* === Paleta Alternativa 1: Roxo + Verde Neon === */
-[data-theme="neon"] {
-  --cor-primaria: #2a003f;
-  --cor-secundaria: #0f0f2e;
-  --cor-destaque: #00ff95;
-  --cor-hover: #00cc77;
+/* RESET E ESTILOS BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* === Paleta Alternativa 2: Azul Claro + Laranja === */
-[data-theme="sunlight"] {
-  --cor-primaria: #004e89;
-  --cor-secundaria: #2e86ab;
-  --cor-destaque: #ffba08;
-  --cor-hover: #faa307;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--cor-principal);
+  color: var(--cor-texto);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--cor-branca);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+a {
+  color: var(--cor-destaque);
+  text-decoration: none;
+  transition: var(--cor-transicao);
+}
+
+a:hover {
+  color: var(--cor-destaque-hover);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--cor-destaque);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: var(--cor-transicao);
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  box-shadow: var(--sombra-padrao);
+}
+
+.btn:hover {
+  background: var(--cor-destaque-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--cor-destaque);
+  color: var(--cor-destaque);
+}
+
+.btn-outline:hover {
+  background: var(--cor-destaque);
+  color: white;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--cor-destaque);
+  border-radius: 2px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: var(--cor-transicao);
+  border: var(--borda-padrao);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: var(--cor-destaque);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.08);
 }
