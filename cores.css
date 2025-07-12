@@ -1,19 +1,19 @@
 /* VARIÁVEIS GLOBAIS */
 :root {
-  --cor-principal: #11014d;              /* cor dominante do fundo */
-  --cor-secundaria: #1a1a2e;             /* cor complementar escura */
-  --cor-destaque: #ff6f00;               /* cor dos botões, links principais */
-  --cor-destaque-hover: #ff8c00;         /* hover de destaque */
+  --cor-principal: var(--azul-escuro);              /* cor dominante do fundo */
+  --cor-secundaria: var(--azul-medio);             /* cor complementar escura */
+  --cor-destaque: var(--laranja-principal);               /* cor dos botões, links principais */
+  --cor-destaque-hover: var(--laranja-hover);         /* hover de destaque */
 
-  --cor-texto: #f8f9fa;                  /* texto principal claro */
-  --cor-fundo: #f3f4f6;                  /* fundo claro alternativo */
-  --cor-base: #4b5563;                   /* cinza médio para textos secundários */
-  --cor-branca: #ffffff;                 /* branco puro */
-  --cor-acento: #00f3ffcc;               /* cor chamativa, neon, usada pontualmente */
+  --cor-texto: var(--texto-claro);                  /* texto principal claro */
+  --cor-fundo: var(--fundo-claro);                  /* fundo claro alternativo */
+  --cor-base: var(--cinza-medio);                   /* cinza médio para textos secundários */
+  --cor-branca: var(--branco);                 /* branco puro */
+  --cor-acento: var(--neon);               /* cor chamativa, neon, usada pontualmente */
 
-  --sombra-padrao: 0 8px 24px rgba(0, 0, 0, 0.15);
-  --borda-padrao: 1px solid rgba(255, 255, 255, 0.1);
-  --cor-transicao: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --sombra-padrao: var(--sombra);
+  --borda-padrao: var(--borda);
+  --cor-transicao: var(--transicao);
 }
 
 /* RESET E ESTILOS BASE */
